@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: jay-elasticsearch
+
+server:
+  port: 8086
+
+logback:
+  logdir: D:\log
