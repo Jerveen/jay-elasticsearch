@@ -38,7 +38,7 @@ public class TransportClientConfig {
 
             // ES的TCP端口为9300,而不是之前练习的HTTP端口9200, 可以配置了一个节点的地址然添加进去,也可以配置多个从节点添加进去再返回
             InetSocketTransportAddress nodeMaster = new InetSocketTransportAddress(InetAddress.getByName("118.25.153.239"), 9300);
-            InetSocketTransportAddress nodeOne = new InetSocketTransportAddress(InetAddress.getByName("118.25.153.239"), 9300);
+            InetSocketTransportAddress nodeOne = new InetSocketTransportAddress(InetAddress.getByName("118.25.153.239"), 9301);
             // 设置连接节点信息
             transportClient.addTransportAddress(nodeMaster);
             transportClient.addTransportAddress(nodeOne);

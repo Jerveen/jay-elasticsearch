@@ -16,7 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <elasticsearch.version>5.6.15</elasticsearch.version>
+        <elasticsearch.version>5.6.16</elasticsearch.version>
     </properties>
 
     <dependencies>
@@ -86,10 +86,22 @@
             <artifactId>elasticsearch</artifactId>
             <version>${elasticsearch.version}</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-            <version>3.0.1.RELEASE</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-elasticsearch</artifactId>
+            <version>3.0.10.RELEASE</version>
         </dependency>
     </dependencies>
 

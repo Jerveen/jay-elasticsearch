@@ -2,6 +2,11 @@ spring:
   application:
     name: jay-elasticsearch
 
+  data:
+    elasticsearch:
+      cluster-name: jay-es
+      cluster-nodes: 118.25.153.239:9300,118.25.153.239:9301
+
 server:
   port: 8086
 

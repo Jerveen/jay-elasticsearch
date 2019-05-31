@@ -110,7 +110,6 @@ public class TransportClientBookController {
      *
      * @param id
      */
-    @RequestMapping(value = "", method = RequestMethod.DELETE)
     @DeleteMapping("/bookDelete/{id}")
     public ResponseEntity<String> delete(@PathVariable(value = "id") String id) {
         DeleteResponse result = transportClient.prepareDelete(EsConstant.ES_INDEX, EsConstant.ES_TYPE, id).get();
